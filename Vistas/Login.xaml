@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cinchiglemasus.Vistas.Login"
+             Title="Login">
+    <VerticalStackLayout>
+        <Label 
+            Text="Sistema de Estudiantes"
+            FontSize="20" TextColor="Red"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Image Source="https://sige.uisrael.edu.ec/imagenes/logo%20oficial.png"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO"
+            FontSize="18"
+            Grid.Row="0"
+            Grid.Column="0"/>
+            <Entry x:Name="txtUsuario"
+            Placeholder="Ingrese el usuario"
+            Grid.Row="0"
+            Grid.Column="1"/>
+            <Label Text="CONTRASEÑA"
+            FontSize="18"
+            Grid.Row="1"
+            Grid.Column="0"/>
+            <Entry x:Name="txtContraseña"
+            Placeholder="Ingrese la contraseña"
+            IsPassword="True"
+            Grid.Row="1"
+            Grid.Column="1"/>
+
+        </Grid>
+
+        <Button x:Name="btnIngreso"
+                Text="Ingreso al Sistema"
+                Clicked="btnIngreso_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
